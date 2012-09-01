@@ -8,8 +8,10 @@ public class Roof {
 	private String direction;
 	private int deadLength;
 	private int deadWidth;
+	private String name;
 
-	public Roof(int length, int width, int angle, String direction, int deadLength, int deadWidth) {
+	public Roof(String name, int length, int width, int angle, String direction, int deadLength, int deadWidth) {
+		this.name = name;
 		this.length = length;
 		this.width = width;
 		this.angle = angle;
