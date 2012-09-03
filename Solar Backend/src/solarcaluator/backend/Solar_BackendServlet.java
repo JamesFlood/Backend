@@ -13,6 +13,10 @@ public class Solar_BackendServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setContentType("application/json");
 
+		
+		
+		//JSONObject json = (JSONObject)new JsonParser().parse(req.getParameter("jsonParameter"));
+		
 		double power = CalculatePower.calculate(75,CalculatePower.efficiency(45, "n", 0),7,DAILY);
 		
 		String JSONoutput = "{" +
