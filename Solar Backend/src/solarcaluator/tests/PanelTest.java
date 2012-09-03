@@ -12,8 +12,8 @@ public class PanelTest {
 		@Before
 		public void setUp(){
 			
-			Panel1 = new Panel();
-			Panel2 = new Panel();
+			Panel1 = new Panel(75);
+			Panel2 = new Panel(75);
 			
 		}
 	

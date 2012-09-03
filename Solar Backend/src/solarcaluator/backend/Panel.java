@@ -4,39 +4,16 @@ import java.util.List;
 
 public class Panel {
 
-	private int length;
-	private int width;
-	private int angle;
-	private String direction;
-	private int deadLength;
-	private int deadWidth;
-	private String name;
-	private List<Panel> Panels;
+	private int size;
 
-	public Panel(String name, int length, int width, int angle, String direction, int deadLength, int deadWidth) {
-		this.name = name;
-		this.length = length;
-		this.width = width;
-		this.angle = angle;
-		this.direction = direction;
-		this.deadLength = deadLength;
-		this.deadWidth = deadWidth;
+
+	public Panel(int size) {
+		this.size = size;
 	}
 	
-	public String getName(){
+	public int getSize(){
 		
-		return this.name;
+		return this.size;
 	}
-	
-	public int getAngle(){
-		
-		return this.angle;
-	}
-	
-	public String direction(){
-		
-		return this.direction;
-	}
-	
 	
 }
